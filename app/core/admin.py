@@ -9,7 +9,7 @@ class UserAdmin(BaseUserAdmin):
     """panel admin"""
 
     ordering = ["id"]
-    list_display = ["email", "first_name", "last_name"]
+    list_display = ["email", "first_name", "last_name", "is_activate"]
     list_filter = []
     fieldsets = (
         (None, {"fields": ("email", "password")}),
